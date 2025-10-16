@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Desafios2 {
     public static void main(String[] args) {
 
-        // 1 Crie um programa que solicite ao usuário digitar um número.
+        // 1. Crie um programa que solicite ao usuário digitar um número.
         // Se o número for positivo, exiba "Número positivo", caso contrário, exiba "Número negativo".
 
         Scanner sc = new Scanner(System.in);
@@ -19,7 +19,7 @@ public class Desafios2 {
         }
 
 
-        // 2 Peça ao usuário para inserir dois números inteiros.
+        // 2. Peça ao usuário para inserir dois números inteiros.
         // Compare os números e imprima uma mensagem indicando se são iguais, diferentes, o primeiro é maior ou o segundo é maior.
 
 
@@ -40,7 +40,7 @@ public class Desafios2 {
         }
 
 
-        // 3 Crie um menu que oferece duas opções ao usuário: "
+        // 3. Crie um menu que oferece duas opções ao usuário: "
         // 1 Calcular área do quadrado" e " 2.
         // Calcular área do círculo". Solicite a escolha do usuário e realize o cálculo da área com base na opção selecionada.
 
@@ -65,6 +65,44 @@ public class Desafios2 {
         }
 
 
+        // 4. Crie um programa que solicite ao usuário um número e exiba a tabuada desse número de 1 a 10.
+
+        System.out.println("Digite um numero para saber a tabuada dele: ");
+        int numeroTabuada = sc.nextInt();
+
+        System.out.println("=== Tabuada do " + numeroTabuada + " ===");
+
+        for (int i = 1; i <= 10; i++){
+            int resultado = numeroTabuada * i;
+            System.out.println(numeroTabuada + " x " + i + " = " + resultado);
+        }
+
+
+        // 5. Crie um programa que solicite ao usuário a entrada de um número inteiro.
+        // Verifique se o número é par ou ímpar e exiba uma mensagem correspondente.
+
+
+        System.out.println("Digite um numero inteiro: ");
+        int numeroInteiro = sc.nextInt();
+
+        if (numeroInteiro  % 2 == 0){
+            System.out.println("O numero é : " +  numeroInteiro + " Par");
+        } else {
+            System.out.println("O numero é : " +  numeroInteiro + " Impar");
+        }
+        
+        
+        // 6 Crie um programa que solicite ao usuário um número e calcule o fatorial desse número.
+
+        System.out.println("Digite um numero para calcular a fatorial ");
+        int numeroFatorial = sc.nextInt();
+
+        int fatorial = 1;
+
+        for (int i = 1; i <= numeroFatorial; i++) {
+            fatorial = fatorial* i;
+            System.out.println("O fatorial de " + numero + " é: " + fatorial);
+        }
     }
 }
 
