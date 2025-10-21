@@ -48,5 +48,8 @@ public class PrimeiraAplicacao {
         int clasificacao;
         clasificacao = (int) (media /2);
         System.out.println("nota do filme no G1: " + clasificacao);
+
+
+
     }
 }
